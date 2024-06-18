@@ -28,7 +28,7 @@ Upon Running the script, you'll be prompted to provide the following information
 >>>
 >>> role_id : This will serve as the new user's role in the organization. Along with the assigned role, the new user will have predetermined permissions. You can find the role ID in the Azure portal under "Azure Active Directory" -> "Roles and Administrators" -> Click on the Desired Role -> Find "Object ID" under role details.
 >>>
->>> Your SQL server info can be found through a variety of ways. If you have SQL Server Management Studio (SSMS), you can find your details there. Otherwise, you can find this info through a configuration file, a credential management portal, or an application configuration portal. 
+Your SQL server info can be found through a variety of ways. If you have SQL Server Management Studio (SSMS), you can find your details there. Otherwise, you can find this info through a configuration file, a credential management portal, or an application configuration portal. 
 >>>
 >>> server : Your SQL server name.
 >>>
