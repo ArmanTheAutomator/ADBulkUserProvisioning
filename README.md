@@ -16,19 +16,11 @@ You can find the client ID in the Azure portal under "Azure Active Directory" ->
 It acts like a password for your application and should be treated confidentially.
 You can find (or regenerate) the client secret in the Azure portal under "Azure Active Directory" -> "App registrations" -> (your application) -> "Certificates & secrets" -> "Client secrets" -> "New client secret".
 
-Once you have the above variables figured out, you'll need the information for the following input variables. 
+Once you have the above variables figured out, the script will connect to your SQL database, and from the database that you've designated, will pull the information of the users that are to be provisioned. 
 
 Upon Running the script, you'll be prompted to provide the following information:
 
->>> user_principal_name : This will serve as the new user's Microsoft account and comes in the format of an email address. (i.e. newuser@example.com)
->>>
->>> user_name : This will serve as the new user's username. (i.e. New User)
->>>
->>> password : This will serve as the new user's temporary password, and will need to be changed.
->>>
 >>> role_id : This will serve as the new user's role in the organization. Along with the assigned role, the new user will have predetermined permissions. You can find the role ID in the Azure portal under "Azure Active Directory" -> "Roles and Administrators" -> Click on the Desired Role -> Find "Object ID" under role details.
->>>
-Your SQL server info can be found through a variety of ways. If you have SQL Server Management Studio (SSMS), you can find your details there. Otherwise, you can find this info through a configuration file, a credential management portal, or an application configuration portal. 
 >>>
 >>> server : Your SQL server name.
 >>>
@@ -37,6 +29,7 @@ Your SQL server info can be found through a variety of ways. If you have SQL Ser
 >>> username : Your SQL database username.
 >>>
 >>> password : Your SQL database password.
+Your SQL server info can be found through a variety of ways. If you have SQL Server Management Studio (SSMS), you can find your details there. Otherwise, you can find this info through a configuration file, a credential management portal, or an application configuration portal. 
 
 Enjoy!
 
