@@ -6,7 +6,7 @@ import pyodbc
 tenant_id = "your_tenant_id"
 client_id = "your_client_id"
 client_secret = "your_client_secret"
-role_id = "your_role_id"  # Replace with the desired Azure AD role ID
+role_id = input("What is the role ID that will be assigned to the users in this group? : ")  # Replace with the desired Azure AD role ID
 
 # SQL Server connection details
 server = input("What is your SQL server name? : ")
